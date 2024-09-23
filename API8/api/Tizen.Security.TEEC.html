@@ -5,52 +5,84 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Namespace Tizen.Security.TEEC
-   </title>
+ </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Tizen.Security.TEEC
-   ">
-    <meta name="generator" content="docfx 2.56.1.0">
+ ">
+    <meta name="generator" content="docfx ">
     <meta name="version" content="API8">
-    
+  
     <link rel="shortcut icon" href="../../images/tizen_favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="../../styles/tizen.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    
+    <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
-  </head>  <body>
-    <div class="layout--main">
-      <div class="container-fluid h-100 api-infra">
-        <div role="main" class="article row flex-xl-nowrap h-100 body-content hide-when-search">
-          <div class="col-md-3 col-xl-2 px-0 layout--column is-sidebar" id="td_docs-sidebar">
-            
-            <div class="sidenav hide-when-search">
-              <div class="sidetoggle collapse d-lg-block" id="secondaryNavbar">
-              </div>
-            </div>
-          </div>
-          <div class="d-none d-xl-block col-xl-2 layout--column pl-0 is-toc" id="td_docs-toc">
-            
-            <div class="hidden-sm sideaffix toc-wrapper" role="complementary">
-              <div class="bs-docs-sidebar toc-content hidden-print hidden-xs hidden-sm affix" id="affix">
-              </div>
-            </div>
-          </div>
-          <main class="col-md-9 col-xl-8 layout--column is-content">
-            <div id="printableArea" class="md-content-wrapper">
-              
-              <nav id="td_docs-breadcrumb" aria-label="breadcrumb"></nav>              <section class="content wrap" id="_content" data-uid="Tizen.Security.TEEC">
-  <div class="entity entity-namespace">
-  <h1 id="Tizen_Security_TEEC" data-uid="Tizen.Security.TEEC" class="mt-0 text-break"><span class="entity-type">Namespace</span>
-  <span id="namespace">Tizen.Security.TEEC</span>
-  </h1>
   
-  <h3 class="hidden-anchor m-0 d-none" id="description"><a href="#description"></a>Description</h3>
+  <meta property="docfx:rel" content="../../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/tizen_logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list"> <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="data-prev=" data-next="data-last="></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle"></a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Tizen.Security.TEEC">
+
+  <h1 id="Tizen_Security_TEEC" data-uid="Tizen.Security.TEEC" class="text-break">Namespace Tizen.Security.TEEC
+</h1>
   <div class="markdown level0 summary"><p>The communication API for connecting Client Applications running in a rich operating environment with security related Trusted Applications running inside a Trusted Execution Environment (TEE).</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -73,21 +105,24 @@ or enhanced flexibility using placements in static global memory or thread-local
 <p>This design choice is evident in the API by the use of pointers to structures rather than
 opaque handles to represent any manipulated objects.</p>
 </li>
-<li>Aim for zero-copy data transfer
+<li><p>Aim for zero-copy data transfer
 The features of the TEE Client API are chosen to maximize the possibility of zero-copy
 data transfer between the Client Application and the Trusted Application.
 However, short messages can also be passed by copy, which avoids the overhead of
-sharing memory.</li>
-<li>Support memory sharing by pointers
+sharing memory.</p>
+</li>
+<li><p>Support memory sharing by pointers
 The TEE Client API will be used to implement higher-level APIs, such as cryptography or
 secure storage, where the caller will often provide memory buffers for input or output data
 using simple C pointers. The TEE Client API must allow efficient sharing of this type of
 memory, and as such does not rely on the Client Application being able to use bulk
-memory buffers allocated by the TEE Client API.</li>
-<li>Specify only communication mechanisms
+memory buffers allocated by the TEE Client API.</p>
+</li>
+<li><p>Specify only communication mechanisms
 This API focuses on defining the underlying communications channel. It does not define
 the format of the messages which pass over the channel, or the protocols used by specific
-Trusted Applications.</li>
+Trusted Applications.</p>
+</li>
 </ul>
 <p>For security reasons, each device vendor usually uses their own TEE solution.
 If you intend your LibTeec application to be used on a real device,
@@ -102,115 +137,87 @@ Parameter[] p = { new Value(1,2,TEFValueType.In) };
 ses.InvokeCommand(1, p);
 ses.Close();
 ctx.Dispose();
-</code></pre></div>
-    <h2 id="classes">Classes
-  </h2>
-      <div class="described-list-item row ml-0 mr-0">
-        <h4 class="col col-12 col-md-4">
-          <a class="xref" href="Tizen.Security.TEEC.BaseParameter-1.html">BaseParameter&lt;TEnum&gt;</a>
-        </h4>
-        <section class="col col-12 col-md-8"><p>This type defines a template for the parameter types.</p>
+</code></pre>
+</div>
+    <h3 id="classes">Classes
+</h3>
+      <h4><a class="xref" href="Tizen.Security.TEEC.BaseParameter-1.html">BaseParameter&lt;TEnum&gt;</a></h4>
+      <section><p>This type defines a template for the parameter types.</p>
 </section>
-      </div>
-      <div class="described-list-item row ml-0 mr-0">
-        <h4 class="col col-12 col-md-4">
-          <a class="xref" href="Tizen.Security.TEEC.Context.html">Context</a>
-        </h4>
-        <section class="col col-12 col-md-8"><p>This type denotes a TEE Context, the main logical container linking a Client Application with a particular TEE.</p>
+      <h4><a class="xref" href="Tizen.Security.TEEC.Context.html">Context</a></h4>
+      <section><p>This type denotes a TEE Context, the main logical container linking a Client Application with a particular TEE.</p>
 </section>
-      </div>
-      <div class="described-list-item row ml-0 mr-0">
-        <h4 class="col col-12 col-md-4">
-          <a class="xref" href="Tizen.Security.TEEC.LoginMethod.html">LoginMethod</a>
-        </h4>
-        <section class="col col-12 col-md-8"><p>This type denotes the Session Login Method used in OpenSession.</p>
+      <h4><a class="xref" href="Tizen.Security.TEEC.LoginMethod.html">LoginMethod</a></h4>
+      <section><p>This type denotes the Session Login Method used in OpenSession.</p>
 </section>
-      </div>
-      <div class="described-list-item row ml-0 mr-0">
-        <h4 class="col col-12 col-md-4">
-          <a class="xref" href="Tizen.Security.TEEC.Parameter.html">Parameter</a>
-        </h4>
-        <section class="col col-12 col-md-8"><p>This type defines the payload of either an open session operation or an invoke command operation. It is
+      <h4><a class="xref" href="Tizen.Security.TEEC.Parameter.html">Parameter</a></h4>
+      <section><p>This type defines the payload of either an open session operation or an invoke command operation. It is
 also used for cancelation of operations, which may be desirable even if no payload is passed.
 Parameters are used to exchange data between CA and TA.</p>
 </section>
-      </div>
-      <div class="described-list-item row ml-0 mr-0">
-        <h4 class="col col-12 col-md-4">
-          <a class="xref" href="Tizen.Security.TEEC.RegisteredMemoryReference.html">RegisteredMemoryReference</a>
-        </h4>
-        <section class="col col-12 col-md-8"><p>This type defines a memory reference that uses a pre-registered or pre-allocated shared memory block.</p>
+      <h4><a class="xref" href="Tizen.Security.TEEC.RegisteredMemoryReference.html">RegisteredMemoryReference</a></h4>
+      <section><p>This type defines a memory reference that uses a pre-registered or pre-allocated shared memory block.</p>
 </section>
-      </div>
-      <div class="described-list-item row ml-0 mr-0">
-        <h4 class="col col-12 col-md-4">
-          <a class="xref" href="Tizen.Security.TEEC.Session.html">Session</a>
-        </h4>
-        <section class="col col-12 col-md-8"><p>This type denotes a TEE Session, the logical container linking a client application with a particular trusted application.</p>
+      <h4><a class="xref" href="Tizen.Security.TEEC.Session.html">Session</a></h4>
+      <section><p>This type denotes a TEE Session, the logical container linking a client application with a particular trusted application.</p>
 </section>
-      </div>
-      <div class="described-list-item row ml-0 mr-0">
-        <h4 class="col col-12 col-md-4">
-          <a class="xref" href="Tizen.Security.TEEC.SharedMemory.html">SharedMemory</a>
-        </h4>
-        <section class="col col-12 col-md-8"><p>This type denotes a shared memory block which has been either registered
+      <h4><a class="xref" href="Tizen.Security.TEEC.SharedMemory.html">SharedMemory</a></h4>
+      <section><p>This type denotes a shared memory block which has been either registered
 with the implementation or allocated by it.</p>
 </section>
-      </div>
-      <div class="described-list-item row ml-0 mr-0">
-        <h4 class="col col-12 col-md-4">
-          <a class="xref" href="Tizen.Security.TEEC.TempMemoryReference.html">TempMemoryReference</a>
-        </h4>
-        <section class="col col-12 col-md-8"><p>This type defines a temporary memory reference.</p>
+      <h4><a class="xref" href="Tizen.Security.TEEC.TempMemoryReference.html">TempMemoryReference</a></h4>
+      <section><p>This type defines a temporary memory reference.</p>
 </section>
-      </div>
-      <div class="described-list-item row ml-0 mr-0">
-        <h4 class="col col-12 col-md-4">
-          <a class="xref" href="Tizen.Security.TEEC.Value.html">Value</a>
-        </h4>
-        <section class="col col-12 col-md-8"><p>This type defines a parameter that is not referencing the shared memory, but carries instead small raw data
+      <h4><a class="xref" href="Tizen.Security.TEEC.Value.html">Value</a></h4>
+      <section><p>This type defines a parameter that is not referencing the shared memory, but carries instead small raw data
 passed by a value.</p>
 </section>
-      </div>
-    <h2 id="enums">Enums
-  </h2>
-      <div class="described-list-item row ml-0 mr-0">
-        <h4 class="col col-12 col-md-4">
-          <a class="xref" href="Tizen.Security.TEEC.SharedMemoryFlags.html">SharedMemoryFlags</a>
-        </h4>
-        <section class="col col-12 col-md-8"><p>This type denotes the SharedMemory access direction.</p>
+    <h3 id="enums">Enums
+</h3>
+      <h4><a class="xref" href="Tizen.Security.TEEC.SharedMemoryFlags.html">SharedMemoryFlags</a></h4>
+      <section><p>This type denotes the SharedMemory access direction.</p>
 </section>
-      </div>
-      <div class="described-list-item row ml-0 mr-0">
-        <h4 class="col col-12 col-md-4">
-          <a class="xref" href="Tizen.Security.TEEC.TEFRegisteredMemoryType.html">TEFRegisteredMemoryType</a>
-        </h4>
-        <section class="col col-12 col-md-8"><p>This type denotes the SharedMemoryReference parameter.</p>
+      <h4><a class="xref" href="Tizen.Security.TEEC.TEFRegisteredMemoryType.html">TEFRegisteredMemoryType</a></h4>
+      <section><p>This type denotes the SharedMemoryReference parameter.</p>
 </section>
-      </div>
-      <div class="described-list-item row ml-0 mr-0">
-        <h4 class="col col-12 col-md-4">
-          <a class="xref" href="Tizen.Security.TEEC.TEFTempMemoryType.html">TEFTempMemoryType</a>
-        </h4>
-        <section class="col col-12 col-md-8"><p>This type denotes the TempMemoryReference parameter
+      <h4><a class="xref" href="Tizen.Security.TEEC.TEFTempMemoryType.html">TEFTempMemoryType</a></h4>
+      <section><p>This type denotes the TempMemoryReference parameter
 describing a region of memory which needs to be temporarily registered for the duration of the operation.</p>
 </section>
-      </div>
-      <div class="described-list-item row ml-0 mr-0">
-        <h4 class="col col-12 col-md-4">
-          <a class="xref" href="Tizen.Security.TEEC.TEFValueType.html">TEFValueType</a>
-        </h4>
-        <section class="col col-12 col-md-8"><p>This type denotes the Value parameter.</p>
+      <h4><a class="xref" href="Tizen.Security.TEEC.TEFValueType.html">TEFValueType</a></h4>
+      <section><p>This type denotes the Value parameter.</p>
 </section>
-      </div>
-  </div>
-</section>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
             </div>
-          </main>
+          </div>
         </div>
       </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>Copyright &copy; 2016-2023 Samsung <br> Generated by <strong>DocFX</strong></span>
+      
           </div>
-    
+        </div>
+      </footer>
+    </div>
+
     <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../../styles/docfx.js"></script>
     <script type="text/javascript" src="../../styles/main.js"></script>

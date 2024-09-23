@@ -5,63 +5,90 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class PanGesture
-   </title>
+ </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PanGesture
-   ">
-    <meta name="generator" content="docfx 2.56.1.0">
+ ">
+    <meta name="generator" content="docfx ">
     <meta name="version" content="API7">
-    
+  
     <link rel="shortcut icon" href="../../images/tizen_favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="../../styles/tizen.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    
+    <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
-  </head>  <body>
-    <div class="layout--main">
-      <div class="container-fluid h-100 api-infra">
-        <div role="main" class="article row flex-xl-nowrap h-100 body-content hide-when-search">
-          <div class="col-md-3 col-xl-2 px-0 layout--column is-sidebar" id="td_docs-sidebar">
-            
-            <div class="sidenav hide-when-search">
-              <div class="sidetoggle collapse d-lg-block" id="secondaryNavbar">
-              </div>
+  
+  <meta property="docfx:rel" content="../../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/tizen_logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="" autocomplete="off">
+                </div>
+              </form>
             </div>
           </div>
-          <div class="d-none d-xl-block col-xl-2 layout--column pl-0 is-toc" id="td_docs-toc">
-            
-            <div class="hidden-sm sideaffix toc-wrapper" role="complementary">
-              <div class="bs-docs-sidebar toc-content hidden-print hidden-xs hidden-sm affix" id="affix">
-              </div>
-            </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <main class="col-md-9 col-xl-8 layout--column is-content">
-            <div id="printableArea" class="md-content-wrapper">
-              
-              <nav id="td_docs-breadcrumb" aria-label="breadcrumb"></nav>              <section class="content wrap" id="_content" data-uid="Tizen.NUI.PanGesture">
-  
-  <div class="entity">
-  
-  <div class="entity-header w-100 d-flex justify-content-between">
-    <h1 id="Tizen_NUI_PanGesture" data-uid="Tizen.NUI.PanGesture" class="mt-0 text-break"><span class="entity-type">Class</span>
-  PanGesture
-  </h1>
-      <div class="contribution align-self-end">
-        <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L31" class="contribution-link">View Source</a>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list"> <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="data-prev=" data-next="data-last="></ul>
+        </div>
       </div>
-  </div>
-  <h3 class="hidden-anchor m-0" id="definition"><a href="#definition"></a>Definition</h3>
-  
-  <dl class="attribute-list"><dt>Namespace:</dt><dd id="parent-namespace"><a class="xref" href="Tizen.NUI.html">Tizen.NUI</a></dd></dl>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle"></a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Tizen.NUI.PanGesture">
+
+
+  <h1 id="Tizen_NUI_PanGesture" data-uid="Tizen.NUI.PanGesture" class="text-break">Class PanGesture
+</h1>
+  <h3 class="hidden-anchor" id="definition"><a href="#definition"></a>Definition</h3>
+
+  <dl class="attribute-list"><dt>Namespace:</dt><dd><a class="xref" href="Tizen.html">Tizen</a>.<a class="xref" href="Tizen.NUI.html">NUI</a></dd></dl>
   <dl class="attribute-list"><dt>Assembly:</dt><dd>Tizen.NUI.dll</dd></dl>
-  <dl class="attribute-list"><dt>API Level:</dt><dd><span>3</span></dd></dl>
-  
+
   <div class="markdown level0 summary"><p>A PanGesture is emitted when the user moves one or more fingers in a particular direction.<br>
 A pan gesture will end in the following ways:<br></p>
 <ul>
@@ -73,17 +100,17 @@ A pan gesture will continue to be sent to the actor under than initial pan until
 </ul>
 </div>
   <div class="markdown level0 conceptual"></div>
-  
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class PanGesture : Gesture, IDisposable</code></pre>
   </div>
 
-  
+
   <dl class="attribute-list stack">
     <dt>Inheritance</dt>
     <dd>
       <div class="pdl-holder">
-        <div class="pdl"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+        <div class="pdl"><span class="xref">object</span></div>
         <div class="pdl"><a class="xref" href="Tizen.NUI.Disposable.html">Disposable</a></div>
         <div class="pdl"><a class="xref" href="Tizen.NUI.Gesture.html">Gesture</a></div>
         <div><span class="xref">PanGesture</span></div>
@@ -91,62 +118,52 @@ A pan gesture will continue to be sent to the actor under than initial pan until
     </dd>
   </dl>
 
-  
-  
-  <dl class="attribute-list">
+
+
+  <dl class="attribute-list stack">
     <dt>Implements</dt>
     <dd>
-      <div class="pdl"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div class="pdl"><span class="xref">System.IDisposable</span></div>
     </dd>
   </dl>
-  
-  
-  <h2 id="constructors">Constructors
-  </h2>
-  
-  <a id="Tizen_NUI_PanGesture__ctor_" data-uid="Tizen.NUI.PanGesture.#ctor*"></a>
-  <div class="entity-child">
-    <span class="pull-right mobile-hide view-source">
-      <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L38">View Source</a>
-    </span>
-    <h4 id="Tizen_NUI_PanGesture__ctor" data-uid="Tizen.NUI.PanGesture.#ctor">PanGesture()</h4>
-    <section>
-      <p>The default constructor.</p>
 
-    </section>
-  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L38">View Source</a>
+  </span>
+  <a id="Tizen_NUI_PanGesture__ctor_" data-uid="Tizen.NUI.PanGesture.#ctor*"></a>
+  <h4 id="Tizen_NUI_PanGesture__ctor" data-uid="Tizen.NUI.PanGesture.#ctor">PanGesture()</h4>
+  <div class="markdown level1 summary"><p>The default constructor.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PanGesture()</code></pre>
   </div>
-  
-  <h6><strong>API Level</strong>: <span>3</span></h6>
-  
-  <h2 id="properties">Properties
-  </h2>
-  
+
+
+  <div style="margin-bottom: 15px"></div>
+
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L78">View Source</a>
+  </span>
   <a id="Tizen_NUI_PanGesture_Displacement_" data-uid="Tizen.NUI.PanGesture.Displacement*"></a>
-  <div class="entity-child">
-    <span class="pull-right mobile-hide view-source">
-      <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L78">View Source</a>
-    </span>
-    <h4 id="Tizen_NUI_PanGesture_Displacement" data-uid="Tizen.NUI.PanGesture.Displacement">Displacement</h4>
-    <section>
-      <p>This is a Vector2 showing how much the user has panned (dragged) since the last pan gesture or,
+  <h4 id="Tizen_NUI_PanGesture_Displacement" data-uid="Tizen.NUI.PanGesture.Displacement">Displacement</h4>
+  <div class="markdown level1 summary"><p>This is a Vector2 showing how much the user has panned (dragged) since the last pan gesture or,
 if the gesture has just started, then the amount panned since the user touched the screen.<br>
 A positive x value shows that the user is panning to the right, a negative x value means the opposite.<br>
 A positive y value shows that the user is panning downwards, a negative y value means upwards.<br></p>
-
-    </section>
-  </div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Vector2 Displacement { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table">
+  <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -160,28 +177,24 @@ A positive y value shows that the user is panning downwards, a negative y value 
       </tr>
     </tbody>
   </table>
-  
-  <h6><strong>API Level</strong>: <span>3</span></h6>
-  
-  
-  <a id="Tizen_NUI_PanGesture_NumberOfTouches_" data-uid="Tizen.NUI.PanGesture.NumberOfTouches*"></a>
-  <div class="entity-child">
-    <span class="pull-right mobile-hide view-source">
-      <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L146">View Source</a>
-    </span>
-    <h4 id="Tizen_NUI_PanGesture_NumberOfTouches" data-uid="Tizen.NUI.PanGesture.NumberOfTouches">NumberOfTouches</h4>
-    <section>
-      <p>The total number of fingers touching the screen in a pan gesture.</p>
 
-    </section>
-  </div>
+
+  <div style="margin-bottom: 15px"></div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L146">View Source</a>
+  </span>
+  <a id="Tizen_NUI_PanGesture_NumberOfTouches_" data-uid="Tizen.NUI.PanGesture.NumberOfTouches*"></a>
+  <h4 id="Tizen_NUI_PanGesture_NumberOfTouches" data-uid="Tizen.NUI.PanGesture.NumberOfTouches">NumberOfTouches</h4>
+  <div class="markdown level1 summary"><p>The total number of fingers touching the screen in a pan gesture.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public uint NumberOfTouches { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table">
+  <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -190,33 +203,29 @@ A positive y value shows that the user is panning downwards, a negative y value 
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="xref">uint</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  <h6><strong>API Level</strong>: <span>3</span></h6>
-  
-  
-  <a id="Tizen_NUI_PanGesture_Position_" data-uid="Tizen.NUI.PanGesture.Position*"></a>
-  <div class="entity-child">
-    <span class="pull-right mobile-hide view-source">
-      <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L90">View Source</a>
-    </span>
-    <h4 id="Tizen_NUI_PanGesture_Position" data-uid="Tizen.NUI.PanGesture.Position">Position</h4>
-    <section>
-      <p>The current touch position of the primary touch point in local actor coordinates.</p>
 
-    </section>
-  </div>
+
+  <div style="margin-bottom: 15px"></div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L90">View Source</a>
+  </span>
+  <a id="Tizen_NUI_PanGesture_Position_" data-uid="Tizen.NUI.PanGesture.Position*"></a>
+  <h4 id="Tizen_NUI_PanGesture_Position" data-uid="Tizen.NUI.PanGesture.Position">Position</h4>
+  <div class="markdown level1 summary"><p>The current touch position of the primary touch point in local actor coordinates.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Vector2 Position { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table">
+  <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -230,32 +239,28 @@ A positive y value shows that the user is panning downwards, a negative y value 
       </tr>
     </tbody>
   </table>
-  
-  <h6><strong>API Level</strong>: <span>3</span></h6>
-  
-  
+
+
+  <div style="margin-bottom: 15px"></div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L122">View Source</a>
+  </span>
   <a id="Tizen_NUI_PanGesture_ScreenDisplacement_" data-uid="Tizen.NUI.PanGesture.ScreenDisplacement*"></a>
-  <div class="entity-child">
-    <span class="pull-right mobile-hide view-source">
-      <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L122">View Source</a>
-    </span>
-    <h4 id="Tizen_NUI_PanGesture_ScreenDisplacement" data-uid="Tizen.NUI.PanGesture.ScreenDisplacement">ScreenDisplacement</h4>
-    <section>
-      <p>This is a Vector2 showing how much the user has panned (dragged) since the last pan gesture or,
+  <h4 id="Tizen_NUI_PanGesture_ScreenDisplacement" data-uid="Tizen.NUI.PanGesture.ScreenDisplacement">ScreenDisplacement</h4>
+  <div class="markdown level1 summary"><p>This is a Vector2 showing how much the user has panned (dragged) since the last pan gesture or,
 if the gesture has just started, then the amount panned since the user touched the screen.<br>
 A positive x value shows that the user is panning to the right, a negative x value means the opposite.<br>
 A positive y value shows that the user is panning downwards, a negative y value means upwards.<br>
 This value is in screen coordinates.<br></p>
-
-    </section>
-  </div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Vector2 ScreenDisplacement { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table">
+  <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -269,28 +274,24 @@ This value is in screen coordinates.<br></p>
       </tr>
     </tbody>
   </table>
-  
-  <h6><strong>API Level</strong>: <span>3</span></h6>
-  
-  
-  <a id="Tizen_NUI_PanGesture_ScreenPosition_" data-uid="Tizen.NUI.PanGesture.ScreenPosition*"></a>
-  <div class="entity-child">
-    <span class="pull-right mobile-hide view-source">
-      <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L134">View Source</a>
-    </span>
-    <h4 id="Tizen_NUI_PanGesture_ScreenPosition" data-uid="Tizen.NUI.PanGesture.ScreenPosition">ScreenPosition</h4>
-    <section>
-      <p>The current touch position of the primary touch point in screen coordinates.</p>
 
-    </section>
-  </div>
+
+  <div style="margin-bottom: 15px"></div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L134">View Source</a>
+  </span>
+  <a id="Tizen_NUI_PanGesture_ScreenPosition_" data-uid="Tizen.NUI.PanGesture.ScreenPosition*"></a>
+  <h4 id="Tizen_NUI_PanGesture_ScreenPosition" data-uid="Tizen.NUI.PanGesture.ScreenPosition">ScreenPosition</h4>
+  <div class="markdown level1 summary"><p>The current touch position of the primary touch point in screen coordinates.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Vector2 ScreenPosition { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table">
+  <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -304,32 +305,28 @@ This value is in screen coordinates.<br></p>
       </tr>
     </tbody>
   </table>
-  
-  <h6><strong>API Level</strong>: <span>3</span></h6>
-  
-  
+
+
+  <div style="margin-bottom: 15px"></div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L106">View Source</a>
+  </span>
   <a id="Tizen_NUI_PanGesture_ScreenVelocity_" data-uid="Tizen.NUI.PanGesture.ScreenVelocity*"></a>
-  <div class="entity-child">
-    <span class="pull-right mobile-hide view-source">
-      <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L106">View Source</a>
-    </span>
-    <h4 id="Tizen_NUI_PanGesture_ScreenVelocity" data-uid="Tizen.NUI.PanGesture.ScreenVelocity">ScreenVelocity</h4>
-    <section>
-      <p>The velocity at which the user is moving their fingers.<br>
+  <h4 id="Tizen_NUI_PanGesture_ScreenVelocity" data-uid="Tizen.NUI.PanGesture.ScreenVelocity">ScreenVelocity</h4>
+  <div class="markdown level1 summary"><p>The velocity at which the user is moving their fingers.<br>
 This is represented as a Vector2 and is the pixel movement per millisecond.<br>
 A positive x value shows that the user is panning to the right, a negative x value means the opposite.<br>
 A positive y value shows that the user is panning downwards, a negative y values means upwards.<br>
 This value represents the screen coordinates.<br></p>
-
-    </section>
-  </div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Vector2 ScreenVelocity { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table">
+  <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -343,31 +340,27 @@ This value represents the screen coordinates.<br></p>
       </tr>
     </tbody>
   </table>
-  
-  <h6><strong>API Level</strong>: <span>3</span></h6>
-  
-  
+
+
+  <div style="margin-bottom: 15px"></div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L63">View Source</a>
+  </span>
   <a id="Tizen_NUI_PanGesture_Velocity_" data-uid="Tizen.NUI.PanGesture.Velocity*"></a>
-  <div class="entity-child">
-    <span class="pull-right mobile-hide view-source">
-      <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L63">View Source</a>
-    </span>
-    <h4 id="Tizen_NUI_PanGesture_Velocity" data-uid="Tizen.NUI.PanGesture.Velocity">Velocity</h4>
-    <section>
-      <p>The velocity at which the user is moving their fingers.<br>
+  <h4 id="Tizen_NUI_PanGesture_Velocity" data-uid="Tizen.NUI.PanGesture.Velocity">Velocity</h4>
+  <div class="markdown level1 summary"><p>The velocity at which the user is moving their fingers.<br>
 This is represented as a Vector2 and is the pixel movement per millisecond.<br>
 A positive x value shows that the user is panning to the right, a negative x value means the opposite.<br>
 A positive y value shows that the user is panning downwards, a negative y values means upwards.<br></p>
-
-    </section>
-  </div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Vector2 Velocity { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table">
+  <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -381,32 +374,28 @@ A positive y value shows that the user is panning downwards, a negative y values
       </tr>
     </tbody>
   </table>
-  
-  <h6><strong>API Level</strong>: <span>3</span></h6>
-  
-  <h2 id="methods">Methods
-  </h2>
-  
+
+
+  <div style="margin-bottom: 15px"></div>
+
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L287">View Source</a>
+  </span>
   <a id="Tizen_NUI_PanGesture_GetDistance_" data-uid="Tizen.NUI.PanGesture.GetDistance*"></a>
-  <div class="entity-child">
-    <span class="pull-right mobile-hide view-source">
-      <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L287">View Source</a>
-    </span>
-    <h4 id="Tizen_NUI_PanGesture_GetDistance" data-uid="Tizen.NUI.PanGesture.GetDistance">GetDistance()</h4>
-    <section>
-      <p>Returns the distance the user has panned (dragged) since the last pan gesture or,
+  <h4 id="Tizen_NUI_PanGesture_GetDistance" data-uid="Tizen.NUI.PanGesture.GetDistance">GetDistance()</h4>
+  <div class="markdown level1 summary"><p>Returns the distance the user has panned (dragged) since the last pan gesture or,
 if the gesture has just started, then the distance moved since the user touched the screen.<br>
 This is always a positive value.<br></p>
-
-    </section>
-  </div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public float GetDistance()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table">
+  <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -415,37 +404,33 @@ This is always a positive value.<br></p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
-        <td><p>The distance, as a float, a user&apos;s finger has panned.</p>
+        <td><span class="xref">float</span></td>
+        <td><p>The distance, as a float, a user's finger has panned.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  <h6><strong>API Level</strong>: <span>3</span></h6>
-  
-  
+
+
+  <div style="margin-bottom: 15px"></div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L315">View Source</a>
+  </span>
   <a id="Tizen_NUI_PanGesture_GetScreenDistance_" data-uid="Tizen.NUI.PanGesture.GetScreenDistance*"></a>
-  <div class="entity-child">
-    <span class="pull-right mobile-hide view-source">
-      <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L315">View Source</a>
-    </span>
-    <h4 id="Tizen_NUI_PanGesture_GetScreenDistance" data-uid="Tizen.NUI.PanGesture.GetScreenDistance">GetScreenDistance()</h4>
-    <section>
-      <p>Returns the distance the user has panned (dragged) since the last pan gesture in screen
+  <h4 id="Tizen_NUI_PanGesture_GetScreenDistance" data-uid="Tizen.NUI.PanGesture.GetScreenDistance">GetScreenDistance()</h4>
+  <div class="markdown level1 summary"><p>Returns the distance the user has panned (dragged) since the last pan gesture in screen
 coordinates or, if the gesture has just started, then the distance in screen coordinates moved
 since the user touched the screen.<br>
 This is always a positive value.<br></p>
-
-    </section>
-  </div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public float GetScreenDistance()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table">
+  <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -454,35 +439,31 @@ This is always a positive value.<br></p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
-        <td><p>The distance, as a float, a user&apos;s finger has panned.</p>
+        <td><span class="xref">float</span></td>
+        <td><p>The distance, as a float, a user's finger has panned.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  <h6><strong>API Level</strong>: <span>3</span></h6>
-  
-  
-  <a id="Tizen_NUI_PanGesture_GetScreenSpeed_" data-uid="Tizen.NUI.PanGesture.GetScreenSpeed*"></a>
-  <div class="entity-child">
-    <span class="pull-right mobile-hide view-source">
-      <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L300">View Source</a>
-    </span>
-    <h4 id="Tizen_NUI_PanGesture_GetScreenSpeed" data-uid="Tizen.NUI.PanGesture.GetScreenSpeed">GetScreenSpeed()</h4>
-    <section>
-      <p>Returns the speed at which the user is moving their fingers relative to screen coordinates.<br>
-This is the pixel movement per millisecond.<br></p>
 
-    </section>
-  </div>
+
+  <div style="margin-bottom: 15px"></div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L300">View Source</a>
+  </span>
+  <a id="Tizen_NUI_PanGesture_GetScreenSpeed_" data-uid="Tizen.NUI.PanGesture.GetScreenSpeed*"></a>
+  <h4 id="Tizen_NUI_PanGesture_GetScreenSpeed" data-uid="Tizen.NUI.PanGesture.GetScreenSpeed">GetScreenSpeed()</h4>
+  <div class="markdown level1 summary"><p>Returns the speed at which the user is moving their fingers relative to screen coordinates.<br>
+This is the pixel movement per millisecond.<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public float GetScreenSpeed()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table">
+  <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -491,35 +472,31 @@ This is the pixel movement per millisecond.<br></p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="xref">float</span></td>
         <td><p>The speed of the pan (in pixels per millisecond).</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  <h6><strong>API Level</strong>: <span>3</span></h6>
-  
-  
-  <a id="Tizen_NUI_PanGesture_GetSpeed_" data-uid="Tizen.NUI.PanGesture.GetSpeed*"></a>
-  <div class="entity-child">
-    <span class="pull-right mobile-hide view-source">
-      <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L273">View Source</a>
-    </span>
-    <h4 id="Tizen_NUI_PanGesture_GetSpeed" data-uid="Tizen.NUI.PanGesture.GetSpeed">GetSpeed()</h4>
-    <section>
-      <p>Returns the speed at which the user is moving their fingers.<br>
-This is the pixel movement per millisecond.<br></p>
 
-    </section>
-  </div>
+
+  <div style="margin-bottom: 15px"></div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L273">View Source</a>
+  </span>
+  <a id="Tizen_NUI_PanGesture_GetSpeed_" data-uid="Tizen.NUI.PanGesture.GetSpeed*"></a>
+  <h4 id="Tizen_NUI_PanGesture_GetSpeed" data-uid="Tizen.NUI.PanGesture.GetSpeed">GetSpeed()</h4>
+  <div class="markdown level1 summary"><p>Returns the speed at which the user is moving their fingers.<br>
+This is the pixel movement per millisecond.<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public float GetSpeed()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table">
+  <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -528,26 +505,54 @@ This is the pixel movement per millisecond.<br></p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="xref">float</span></td>
         <td><p>The speed of the pan (in pixels per millisecond).</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  <h6><strong>API Level</strong>: <span>3</span></h6>
-  
-  <h2 id="implements">Implements</h2>
+
+
+  <div style="margin-bottom: 15px"></div>
+
+  <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+      <span class="xref">System.IDisposable</span>
   </div>
-  </div></section>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Samsung/TizenFX/blob/API7/src/Tizen.NUI/src/public/PanGesture.cs/#L31" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
             </div>
-          </main>
+          </div>
         </div>
       </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>Copyright &copy; 2016-2023 Samsung <br> Generated by <strong>DocFX</strong></span>
+      
           </div>
-    
+        </div>
+      </footer>
+    </div>
+
     <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../../styles/docfx.js"></script>
     <script type="text/javascript" src="../../styles/main.js"></script>

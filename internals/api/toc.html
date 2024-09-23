@@ -2,29 +2,25 @@
 <div id="sidetoggle">
   <div>
     <div class="sidefilter">
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle shadow-none" type="button" id="dropdownApiButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TizenFX API</button>
-        <div class="dropdown-menu" aria-labelledby="dropdownApiButton" id="dropdownApiMenu">
-          <a class="dropdown-item" href="#">TizenFX API</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle shadow-none" type="button" id="dropdownApiVersionButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-        <div class="dropdown-menu" aria-labelledby="dropdownApiVersionButton" id="dropdownApiVersionMenu"></div>
+      <div class="moniker-picker">
+        <span class="moniker-picker-label">Version</span>
+        <select class="moniker-picker-menu">
+        </select>
       </div>
       <form class="toc-filter">
-        <input type="text" id="toc_filter_input" placeholder="add filter" onkeypress="if(event.keyCode==13) {return false;}">
+        <span class="glyphicon glyphicon-filter filter-icon"></span>
+        <span class="glyphicon glyphicon-remove clear-icon" id="toc_filter_clear"></span>
+        <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
       </form>
-      <div class="sidefilter-separator"></div>
     </div>
     <div class="sidetoc">
       <div class="toc" id="toc">
-          
+
           <ul class="nav level1">
                 <li>
                     <span class="expand-stub"></span>
                     <a href="Tizen.Inspections.html" name="" title="Tizen.Inspections">Tizen.Inspections</a>
-                    
+
                     <ul class="nav level2">
                           <li>
                               <a href="Tizen.Inspections.DataRequestReceivedEventArgs.html" name="" title="DataRequestReceivedEventArgs">DataRequestReceivedEventArgs</a>
@@ -46,7 +42,7 @@
                 <li>
                     <span class="expand-stub"></span>
                     <a href="Tizen.Peripheral.Adc.html" name="" title="Tizen.Peripheral.Adc">Tizen.Peripheral.Adc</a>
-                    
+
                     <ul class="nav level2">
                           <li>
                               <a href="Tizen.Peripheral.Adc.AdcChannel.html" name="" title="AdcChannel">AdcChannel</a>
@@ -56,7 +52,7 @@
                 <li>
                     <span class="expand-stub"></span>
                     <a href="Tizen.Peripheral.Gpio.html" name="" title="Tizen.Peripheral.Gpio">Tizen.Peripheral.Gpio</a>
-                    
+
                     <ul class="nav level2">
                           <li>
                               <a href="Tizen.Peripheral.Gpio.GpioChangePolarity.html" name="" title="GpioChangePolarity">GpioChangePolarity</a>
@@ -78,7 +74,7 @@
                 <li>
                     <span class="expand-stub"></span>
                     <a href="Tizen.Peripheral.I2c.html" name="" title="Tizen.Peripheral.I2c">Tizen.Peripheral.I2c</a>
-                    
+
                     <ul class="nav level2">
                           <li>
                               <a href="Tizen.Peripheral.I2c.I2cDevice.html" name="" title="I2cDevice">I2cDevice</a>
@@ -88,7 +84,7 @@
                 <li>
                     <span class="expand-stub"></span>
                     <a href="Tizen.Peripheral.Pwm.html" name="" title="Tizen.Peripheral.Pwm">Tizen.Peripheral.Pwm</a>
-                    
+
                     <ul class="nav level2">
                           <li>
                               <a href="Tizen.Peripheral.Pwm.PwmPin.html" name="" title="PwmPin">PwmPin</a>
@@ -101,7 +97,7 @@
                 <li>
                     <span class="expand-stub"></span>
                     <a href="Tizen.Peripheral.Spi.html" name="" title="Tizen.Peripheral.Spi">Tizen.Peripheral.Spi</a>
-                    
+
                     <ul class="nav level2">
                           <li>
                               <a href="Tizen.Peripheral.Spi.BitOrder.html" name="" title="BitOrder">BitOrder</a>
@@ -117,7 +113,7 @@
                 <li>
                     <span class="expand-stub"></span>
                     <a href="Tizen.Peripheral.Uart.html" name="" title="Tizen.Peripheral.Uart">Tizen.Peripheral.Uart</a>
-                    
+
                     <ul class="nav level2">
                           <li>
                               <a href="Tizen.Peripheral.Uart.BaudRate.html" name="" title="BaudRate">BaudRate</a>
@@ -145,7 +141,7 @@
                 <li>
                     <span class="expand-stub"></span>
                     <a href="Tizen.Uix.VoiceControlWidget.html" name="" title="Tizen.Uix.VoiceControlWidget">Tizen.Uix.VoiceControlWidget</a>
-                    
+
                     <ul class="nav level2">
                           <li>
                               <a href="Tizen.Uix.VoiceControlWidget.AsrResultEventArgs.html" name="" title="AsrResultEventArgs">AsrResultEventArgs</a>
