@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Namespace Tizen.Multimedia.Remoting
-   </title>
+ </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Tizen.Multimedia.Remoting
-   ">
-    <meta name="generator" content="docfx 2.56.1.0">
-    <meta name="version" content="API9">
-    
+ ">
+    <meta name="generator" content="docfx ">
+    <meta name="version" content="API11">
+  
     <link rel="shortcut icon" href="../../images/tizen_favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
@@ -20,13 +20,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../../">
-    
+  
+  <meta property="docfx:rel" content="../../">
+  
   </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
-        
+
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -36,7 +36,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
+
               <a class="navbar-brand" href="../../index.html">
                 <img id="logo" class="svg" src="../../images/tizen_logo.png" alt="">
               </a>
@@ -44,13 +44,13 @@
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
                 <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  <input type="text" class="form-control" id="search-query" placeholder="" autocomplete="off">
                 </div>
               </form>
             </div>
           </div>
         </nav>
-        
+
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -60,19 +60,19 @@
         </div>
       </header>
       <div class="container body-content">
-        
+
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list"> <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="data-prev=" data-next="data-last="></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        
+
         <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle"></a>
           <div class="sidetoggle collapse" id="sidetoggle">
             <div id="sidetoc"></div>
           </div>
@@ -80,20 +80,23 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Tizen.Multimedia.Remoting">
-  
+
   <h1 id="Tizen_Multimedia_Remoting" data-uid="Tizen.Multimedia.Remoting" class="text-break">Namespace Tizen.Multimedia.Remoting
-  </h1>
+</h1>
   <div class="markdown level0 summary"><p>The System.Runtime.Remoting namespace provides classes and interfaces that work with remote process or device.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
-  </h3>
+</h3>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.Command.html">Command</a></h4>
       <section><p>Provides a means to send command to media control server.</p>
 </section>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.CustomCommand.html">CustomCommand</a></h4>
       <section><p>Provides a means to to send custom commands.</p>
+</section>
+      <h4><a class="xref" href="Tizen.Multimedia.Remoting.CustomCommandCapabilityUpdatedEventArgs.html">CustomCommandCapabilityUpdatedEventArgs</a></h4>
+      <section><p>Provides data for the <a class="xref" href="Tizen.Multimedia.Remoting.MediaController.html#Tizen_Multimedia_Remoting_MediaController_CustomCommandCapabilityUpdated">CustomCommandCapabilityUpdated</a> event.</p>
 </section>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.CustomCommandReceivedEventArgs.html">CustomCommandReceivedEventArgs</a></h4>
       <section><p>Provides data for the <a class="xref" href="Tizen.Multimedia.Remoting.MediaControlServer.html#Tizen_Multimedia_Remoting_MediaControlServer_CustomCommandReceived">CustomCommandReceived</a> or
@@ -150,8 +153,14 @@
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.MediaControlServerStoppedEventArgs.html">MediaControlServerStoppedEventArgs</a></h4>
       <section><p>Provides data for the <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html#Tizen_Multimedia_Remoting_MediaControllerManager_ServerStopped">ServerStopped</a> event.</p>
 </section>
+      <h4><a class="xref" href="Tizen.Multimedia.Remoting.MediaFileSource.html">MediaFileSource</a></h4>
+      <section><p>Represents a media source with contents read from a file.</p>
+</section>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.MediaMicrophoneSource.html">MediaMicrophoneSource</a></h4>
       <section><p>Represents a microphone source.</p>
+</section>
+      <h4><a class="xref" href="Tizen.Multimedia.Remoting.MediaNullSource.html">MediaNullSource</a></h4>
+      <section><p>Represents a null source.</p>
 </section>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.MediaPacketBufferStatusChangedEventArgs.html">MediaPacketBufferStatusChangedEventArgs</a></h4>
       <section><p>Provides data for the <a class="xref" href="Tizen.Multimedia.Remoting.MediaPacketSourceConfiguration.html#Tizen_Multimedia_Remoting_MediaPacketSourceConfiguration_BufferStatusChanged">BufferStatusChanged</a> event.</p>
@@ -177,6 +186,9 @@
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.MetadataUpdatedEventArgs.html">MetadataUpdatedEventArgs</a></h4>
       <section><p>Provides data for the <a class="xref" href="Tizen.Multimedia.Remoting.MediaController.html#Tizen_Multimedia_Remoting_MediaController_MetadataUpdated">MetadataUpdated</a> event.</p>
 </section>
+      <h4><a class="xref" href="Tizen.Multimedia.Remoting.Mode360CapabilityUpdatedEventArgs.html">Mode360CapabilityUpdatedEventArgs</a></h4>
+      <section><p>Provides data for the <a class="xref" href="Tizen.Multimedia.Remoting.MediaController.html#Tizen_Multimedia_Remoting_MediaController_Mode360CapabilityUpdated">Mode360CapabilityUpdated</a> event.</p>
+</section>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.Mode360Command.html">Mode360Command</a></h4>
       <section><p>Provides a means to to send 360 mode command.</p>
 </section>
@@ -198,6 +210,9 @@
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.PlaybackCommandReceivedEventArgs.html">PlaybackCommandReceivedEventArgs</a></h4>
       <section><p>Provides data for the <a class="xref" href="Tizen.Multimedia.Remoting.MediaControlServer.html#Tizen_Multimedia_Remoting_MediaControlServer_PlaybackCommandReceived">PlaybackCommandReceived</a> event.</p>
 </section>
+      <h4><a class="xref" href="Tizen.Multimedia.Remoting.PlaybackPositionCapabilityUpdatedEventArgs.html">PlaybackPositionCapabilityUpdatedEventArgs</a></h4>
+      <section><p>Provides data for the <a class="xref" href="Tizen.Multimedia.Remoting.MediaController.html#Tizen_Multimedia_Remoting_MediaController_PlaybackPositionCapabilityUpdated">PlaybackPositionCapabilityUpdated</a> event.</p>
+</section>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.PlaybackPositionCommand.html">PlaybackPositionCommand</a></h4>
       <section><p>Provides a means to send playback command to order specific time position.</p>
 </section>
@@ -206,6 +221,9 @@
 </section>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.PlaybackStateUpdatedEventArgs.html">PlaybackStateUpdatedEventArgs</a></h4>
       <section><p>Provides data for the <a class="xref" href="Tizen.Multimedia.Remoting.MediaController.html#Tizen_Multimedia_Remoting_MediaController_PlaybackStateUpdated">PlaybackStateUpdated</a> event.</p>
+</section>
+      <h4><a class="xref" href="Tizen.Multimedia.Remoting.PlaylistCapabilityUpdatedEventArgs.html">PlaylistCapabilityUpdatedEventArgs</a></h4>
+      <section><p>Provides data for the <a class="xref" href="Tizen.Multimedia.Remoting.MediaController.html#Tizen_Multimedia_Remoting_MediaController_PlaylistCapabilityUpdated">PlaylistCapabilityUpdated</a> event.</p>
 </section>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.PlaylistCommand.html">PlaylistCommand</a></h4>
       <section><p>Provides a means to send playback command with playlist information.</p>
@@ -244,6 +262,9 @@ start, pause, and resume the screen mirroring as a sink.</p>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.ScreenMirroringVideoInfo.html">ScreenMirroringVideoInfo</a></h4>
       <section><p>Provides a means to retrieve the video information which is negotiated with the source device.</p>
 </section>
+      <h4><a class="xref" href="Tizen.Multimedia.Remoting.SearchCapabilityUpdatedEventArgs.html">SearchCapabilityUpdatedEventArgs</a></h4>
+      <section><p>Provides data for the <a class="xref" href="Tizen.Multimedia.Remoting.MediaController.html#Tizen_Multimedia_Remoting_MediaController_SearchCapabilityUpdated">SearchCapabilityUpdated</a> event.</p>
+</section>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.SearchCommand.html">SearchCommand</a></h4>
       <section><p>Provides a means to to send search commands.</p>
 </section>
@@ -265,6 +286,9 @@ start, pause, and resume the screen mirroring as a sink.</p>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.ShuffleModeUpdatedEventArgs.html">ShuffleModeUpdatedEventArgs</a></h4>
       <section><p>Provides data for the <a class="xref" href="Tizen.Multimedia.Remoting.MediaController.html#Tizen_Multimedia_Remoting_MediaController_ShuffleModeUpdated">ShuffleModeUpdated</a> event.</p>
 </section>
+      <h4><a class="xref" href="Tizen.Multimedia.Remoting.SubtitleCapabilityUpdatedEventArgs.html">SubtitleCapabilityUpdatedEventArgs</a></h4>
+      <section><p>Provides data for the <a class="xref" href="Tizen.Multimedia.Remoting.MediaController.html#Tizen_Multimedia_Remoting_MediaController_SubtitleCapabilityUpdated">SubtitleCapabilityUpdated</a> event.</p>
+</section>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.SubtitleModeCommand.html">SubtitleModeCommand</a></h4>
       <section><p>Provides a means to to send subtitle mode command.</p>
 </section>
@@ -276,6 +300,9 @@ start, pause, and resume the screen mirroring as a sink.</p>
 </section>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.WebRTC.html">WebRTC</a></h4>
       <section><p>Provides the ability to control WebRTC.</p>
+</section>
+      <h4><a class="xref" href="Tizen.Multimedia.Remoting.WebRTC.WebRTCStatistics.html">WebRTC.WebRTCStatistics</a></h4>
+      <section><p>Represents WebRTC statistics information.</p>
 </section>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.WebRTCDataChannel.html">WebRTCDataChannel</a></h4>
       <section><p>Provides the ability to control WebRTC data channel.</p>
@@ -317,7 +344,7 @@ start, pause, and resume the screen mirroring as a sink.</p>
       <section><p>Provides data for the <a class="xref" href="Tizen.Multimedia.Remoting.WebRTC.html#Tizen_Multimedia_Remoting_WebRTC_TrackAdded">TrackAdded</a> event.</p>
 </section>
     <h3 id="enums">Enums
-  </h3>
+</h3>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.DataChannelType.html">DataChannelType</a></h4>
       <section><p>Specifies data type that transfers on data channel.</p>
 </section>
@@ -372,8 +399,14 @@ start, pause, and resume the screen mirroring as a sink.</p>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.ScreenMirroringVideoCodec.html">ScreenMirroringVideoCodec</a></h4>
       <section><p>Specifies the video codecs for <a class="xref" href="Tizen.Multimedia.Remoting.ScreenMirroring.html">ScreenMirroring</a>.</p>
 </section>
+      <h4><a class="xref" href="Tizen.Multimedia.Remoting.TransceiverCodec.html">TransceiverCodec</a></h4>
+      <section><p>Specifies the transceiver codec type.</p>
+</section>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.TransceiverDirection.html">TransceiverDirection</a></h4>
       <section><p>Specifies the transceiver direction type.</p>
+</section>
+      <h4><a class="xref" href="Tizen.Multimedia.Remoting.WebRTCBundlePolicy.html">WebRTCBundlePolicy</a></h4>
+      <section><p>Specifies the bundle policy.</p>
 </section>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.WebRTCDisplayMode.html">WebRTCDisplayMode</a></h4>
       <section><p>Specifies the display type.</p>
@@ -396,9 +429,15 @@ start, pause, and resume the screen mirroring as a sink.</p>
       <h4><a class="xref" href="Tizen.Multimedia.Remoting.WebRTCState.html">WebRTCState</a></h4>
       <section><p>Specifies states that a <a class="xref" href="Tizen.Multimedia.Remoting.WebRTC.html">WebRTC</a> can have.</p>
 </section>
+      <h4><a class="xref" href="Tizen.Multimedia.Remoting.WebRTCStatisticsCategory.html">WebRTCStatisticsCategory</a></h4>
+      <section><p>Specifies the category of WebRTC statistics.</p>
+</section>
+      <h4><a class="xref" href="Tizen.Multimedia.Remoting.WebRTCStatisticsProperty.html">WebRTCStatisticsProperty</a></h4>
+      <section><p>Specifies the WebRTC statistics property.</p>
+</section>
 </article>
           </div>
-          
+
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <div class="contribution">
@@ -412,7 +451,7 @@ start, pause, and resume the screen mirroring as a sink.</p>
           </div>
         </div>
       </div>
-      
+
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
@@ -420,13 +459,13 @@ start, pause, and resume the screen mirroring as a sink.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            <span>Copyright &copy; 2016-2021 Samsung <br> Generated by <strong>DocFX</strong></span>
-            
+      <span>Copyright &copy; 2016-2023 Samsung <br> Generated by <strong>DocFX</strong></span>
+      
           </div>
         </div>
       </footer>
     </div>
-    
+
     <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../../styles/docfx.js"></script>
     <script type="text/javascript" src="../../styles/main.js"></script>
